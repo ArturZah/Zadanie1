@@ -1,0 +1,17 @@
+.employee-container {
+    display: flex;
+    width: 60%;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.employee-container__image {
+    width: 150px;
+    height: 150px;
+}
+
+.employee-container__element {
+    width: 150px;
+    text-align: center;
+}

@@ -1,0 +1,17 @@
+<div *ngIf="employee" class="employee-container">
+    <ng-container
+        *ngIf="employee.profile_image; else placeholderImage">
+        <img class="employee-container__image"
+             [src]="employee.profile_image"
+             alt="profile image">
+    </ng-container>
+    <div class="employee-container__element">{{employee.id}}</div>
+    <div class="employee-container__element">{{employee.employee_name}}</div>
+    <div class="employee-container__element">{{employee.employee_age}}</div>
+    <div class="employee-container__element">{{employee.employee_salary}}</div>
+</div>
+<ng-template #placeholderImage>
+    <img
+        class="employee-container__image"
+        src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="no profile image">
+</ng-template>

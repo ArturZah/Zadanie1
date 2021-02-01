@@ -1,0 +1,14 @@
+.list-header {
+    display: flex;
+    width: 60%;
+    height: 80px;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #dedede;
+}
+
+.list-header__element {
+    width: 150px;
+    text-align: center;
+}

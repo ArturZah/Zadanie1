@@ -1,0 +1,10 @@
+<div class="list-header">
+    <div class="list-header__element"></div>
+    <div class="list-header__element">Id</div>
+    <div class="list-header__element">Name</div>
+    <div class="list-header__element">Age</div>
+    <div class="list-header__element">Salay</div>
+</div>
+<ng-container *ngFor="let employee of employeesList?.data">
+    <app-employee [employee]="employee"></app-employee>
+</ng-container>
